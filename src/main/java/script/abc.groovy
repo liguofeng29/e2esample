@@ -1,6 +1,7 @@
 import geb.Browser
 
-System.setProperty("webdriver.gecko.driver", "E:\\dev\\groovy_geb\\geckodriver.exe")
+// TODO 後で直す
+System.setProperty("webdriver.gecko.driver", "E:\\dev\\pleiades\\workspace\\e2esample\\driver\\geckodriver.exe")
 
 def keywords = 'javait.hatenablog.com'
 Browser.drive {
