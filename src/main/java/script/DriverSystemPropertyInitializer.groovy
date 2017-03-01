@@ -3,15 +3,12 @@ package script;
 import org.apache.commons.lang3.SystemUtils
 
 /**
- * 各種ブラウザ用のSelenium WebDriverのシステムプロパティを初期化するためのクラス。
+ * properties for drivers
  */
 class DriverSystemPropertyInitializer {
 
     private static String DRIVER_BASE_PATH = getDriverPath()
 
-    /**
-     * 実行環境に合わせた各種WebDriverバイナリのパスをシステムプロパティに設定する
-     */
     static void initialize() {
         initializeInternetExplorerDriver()
         initializeChromeDriver()

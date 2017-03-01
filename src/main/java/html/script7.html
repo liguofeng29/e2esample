@@ -1,0 +1,31 @@
+<html>
+<head lang="ja">
+<meta charset="UTF-8">
+<title>Javascript Example</title>
+<script  type="text/javascript">
+
+function doAlert() {
+	alert('alert!');
+    document.getElementById('forAlert').innerHTML = 'alerボタン押下された';
+}
+
+function doConfirm() {
+	var ret = confirm('confirm?');
+	if (ret) {
+		document.getElementById('forConfirm').innerHTML = 'はいを選択';
+	} else {
+		document.getElementById('forConfirm').innerHTML = 'いいえを選択';
+	}
+
+}
+</script>
+</head>
+<body>
+	<input type="button" name="showAlert" onclick="doAlert();" value="showAlert" />
+	<div id="forAlert"> </div>
+	<input type="button" name="contShowAlert"value="contShowAlert" />
+	<input type="button" name="showConfirm" onclick="doConfirm();" value="showConfirm" />
+    <div id="forConfirm"></div>
+
+</body>
+</html>

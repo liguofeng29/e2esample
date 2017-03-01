@@ -12,7 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities
 
 // Geb 設定ファイル
 
-baseUrl = "http://google.co.jp/"
+baseUrl = "file:///C:/Users/kokuho-ri/git/e2esample/src/main/java/html/"
 
 // reportsDir = "c:\\temp\\report"
 // reportsDir = "c:\\temp\\download"
