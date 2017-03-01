@@ -9,7 +9,6 @@
  */
 import geb.Browser
 
-def keywords = 'javait.hatenablog.com'
 def testPage = new File('src/main/java/html/script6.html')
 
 Browser.drive {

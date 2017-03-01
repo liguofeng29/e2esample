@@ -4,8 +4,7 @@ def keywords = 'javait.hatenablog.com'
 
 Browser.drive {
 
-	println baseUrl // debug
-    go baseUrl
+    go 'http://google.co.jp'
 	println title
 
 	// chrome, firefoxでの動きが異なっている

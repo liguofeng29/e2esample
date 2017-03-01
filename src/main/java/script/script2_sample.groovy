@@ -1,5 +1,5 @@
 /**
- * Geb Navigator API
+ * Geb sample
  *
  * http://www.gebish.org/manual/current/#the-jquery-ish-navigator-api
  *
@@ -42,5 +42,6 @@ Browser.drive {
 	// 出力
 	$('h3').each { println "* ${it.text()}" }
 
+	sleep 10 * 1000
 }.quit()
 

@@ -11,10 +11,12 @@
 import geb.Browser
 import geb.Page
 
-def keywords = 'javait.hatenablog.com'
 def testPage = new File('src/main/java/html/script5.html')
 
 Browser.drive {
+	// baseUrl設定
+	config.baseUrl = new File(testPage.getAbsolutePath()).toURI()
+
 	// 指定URLでブラウザオープン
 	go testPage.toURI().toString()
 
@@ -38,8 +40,7 @@ Browser.drive {
 
 
 class LayoutPage extends Page {
-
-	// GebConfig.groovyのbaseUrlに連結されたURL
+	// baseUrl + url
 	static url = 'script5.html'
 
 	static content = {
@@ -48,6 +49,6 @@ class LayoutPage extends Page {
 }
 
 class ContentsPage extends Page {
-	// GebConfig.groovyのbaseUrlに連結されたURL
+	// baseUrl + url
 	static url = 'script5_content_frame.html'
 }

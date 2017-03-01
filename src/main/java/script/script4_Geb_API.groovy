@@ -5,7 +5,7 @@
  */
 import geb.Browser
 
-def testPage = new File('src/main/java/html/script4_frame.html')
+def testPage = new File('src/main/java/html/script4.html')
 
 Browser.drive {
 	// 指定URLでブラウザオープン
@@ -85,23 +85,7 @@ Browser.drive {
 	// assert
 	assert $('#form6').optionlist2 == '3'
 
-
-	/*************************/
-	/** for frame           **/
-	/*************************/
-
-
-
-
-
-
-		sleep 10 * 1000
-
-	// ブラウザ終了
-	// close();
-
-	// WebDriver終了
-	// quit()
+	sleep 10 * 1000
 
 }.quit()
 

@@ -16,12 +16,11 @@
  */
 import geb.Browser
 
-
 Browser.drive {
 	go 'https://www.google.com/recaptcha/demo/ajax'
 
 	$('input', value: 'Click Me').click()
-	waitFor {
+	page.waitFor {
 		$('#recaptcha_challenge_image').size() > 0
 	}
 	println $('#recaptcha_challenge_image').attr('src')

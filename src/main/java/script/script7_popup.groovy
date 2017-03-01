@@ -5,22 +5,21 @@
  *
  * use AlertAndConfirmSupport for alert,confirm,prompt
  *
- *
  * Geb does not provide any support for prompt() due to its infrequent and generally discouraged use.
 
  */
 import geb.Browser
 import geb.Page
 
-def keywords = 'javait.hatenablog.com'
-// def testPage = new File('src/main/java/html/script7.html')
+def testPage = new File('src/main/java/html/script7.html')
 
 Browser.drive {
-	// go testPage.toURI().toString()
+	// baseUrl設定
+	config.baseUrl = new File(testPage.getAbsolutePath()).toURI()
 
 	to PopupPage
 
-	// API for AlertAndConfirmSuppor
+	// API from AlertAndConfirmSuppor
 	/** alert **/
 //	def withAlert(Closure actions)
 //	def withAlert(Map params, Closure actions)
@@ -45,8 +44,6 @@ Browser.drive {
 
 	sleep 10 * 1000
 }.quit()
-
-
 
 class PopupPage extends Page{
 	// baseURL +
