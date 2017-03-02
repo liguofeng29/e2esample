@@ -20,8 +20,11 @@ Browser.drive {
 	go 'https://www.google.com/recaptcha/demo/ajax'
 
 	$('input', value: 'Click Me').click()
-	page.waitFor {
+	// page.waitFor { この書き方でもよいが、groovyらしく下記で。
+	waitFor {
+		// GebConfigのtimeout秒を待ち、例外が発生する
 		$('#recaptcha_challenge_image').size() > 0
+
 	}
 	println $('#recaptcha_challenge_image').attr('src')
 

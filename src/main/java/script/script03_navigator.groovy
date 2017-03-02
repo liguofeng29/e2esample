@@ -12,7 +12,7 @@
 import geb.Browser
 
 def keywords = 'javait.hatenablog.com'
-def testPage = new File('src/main\\java/html/script3.html')
+def testPage = new File('src/main\\java/html/script03.html')
 
 Browser.drive {
     go testPage.toURI().toString()

@@ -1,0 +1,12 @@
+<title>for javascript</title>
+<script type="text/javascript">
+	function call(obj) {
+		 document.getElementById('div1').innerHTML = obj.name + "が押されました。"
+	}
+</script>
+<body>
+<input type="button" id="button1" name="button1" value="ボタン１" onclick="call(this)">
+<input type="button" id="button2" name="button2" value="ボタン２" onclick="call(this)">
+<input type="button" id="button3" name="button3" value="ボタン３" onclick="call(this)">
+<div id="div1"></div>
+</body>

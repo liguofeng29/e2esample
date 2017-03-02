@@ -1,11 +1,13 @@
 /**
  * Geb API
  *
+ * Control HTMLElement
+ *
  * http://www.gebish.org/manual/
  */
 import geb.Browser
 
-def testPage = new File('src/main/java/html/script4.html')
+def testPage = new File('src/main/java/html/script04.html')
 
 Browser.drive {
 	// 指定URLでブラウザオープン

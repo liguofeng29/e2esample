@@ -15,8 +15,7 @@ import org.openqa.selenium.remote.DesiredCapabilities
 // FIXME ここは
 // baseUrl = "file:///C:/Users/kokuho-ri/git/e2esample/src/main/java/html/"
 
-// reportsDir = "c:\\temp\\report"
-// reportsDir = "c:\\temp\\download"
+reportsDir = "tmp"
 
 // at()チェックの待機設定
 atCheckWaiting = true
@@ -28,7 +27,7 @@ autoClearCookies = false
 
 // 待機時間の指定（キーワード指定）
 waiting {
-    timeout = 120
+    timeout = 20
     retryInterval = 1
 }
 

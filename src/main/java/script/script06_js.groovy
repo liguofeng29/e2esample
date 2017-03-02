@@ -9,7 +9,7 @@
  */
 import geb.Browser
 
-def testPage = new File('src/main/java/html/script6.html')
+def testPage = new File('src/main/java/html/script06.html')
 
 Browser.drive {
 	// 指定URLでブラウザオープン

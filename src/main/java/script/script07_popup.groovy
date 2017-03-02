@@ -3,7 +3,9 @@
  *
  * http://www.gebish.org/manual/
  *
- * use AlertAndConfirmSupport for alert,confirm,prompt
+ * WedDriver does not have solution for popup.
+ *
+ * Geb use AlertAndConfirmSupport for alert,confirm,prompt.
  *
  * Geb does not provide any support for prompt() due to its infrequent and generally discouraged use.
 
@@ -11,7 +13,7 @@
 import geb.Browser
 import geb.Page
 
-def testPage = new File('src/main/java/html/script7.html')
+def testPage = new File('src/main/java/html/script07.html')
 
 Browser.drive {
 	// baseUrl設定

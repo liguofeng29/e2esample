@@ -1,5 +1,6 @@
 /**
- * Geb for Frame API
+ * Geb API
+ * Control Frame
  *
  * http://www.gebish.org/manual/
  *
@@ -11,7 +12,7 @@
 import geb.Browser
 import geb.Page
 
-def testPage = new File('src/main/java/html/script5.html')
+def testPage = new File('src/main/java/html/script05.html')
 
 Browser.drive {
 	// baseUrl設定
@@ -41,7 +42,7 @@ Browser.drive {
 
 class LayoutPage extends Page {
 	// baseUrl + url
-	static url = 'script5.html'
+	static url = 'script05.html'
 
 	static content = {
 		contentsFrame(page: ContentsPage){$('#content')}
