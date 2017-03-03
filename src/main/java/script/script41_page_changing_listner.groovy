@@ -7,7 +7,7 @@ Browser.drive {
     def listener = new RecordingPageChangeListener()
 
     // page変更リスナー追加
-    browser.registerPageChangeListener(listener)
+    registerPageChangeListener(listener)
 
     go 'http://www.google.co.jp/'
     sleep 3 *1000
@@ -15,7 +15,7 @@ Browser.drive {
     go 'http://www.yahoo.co.jp/'
     sleep 30 * 1000
 
-    browser.removePageChangeListener(listener)
+    removePageChangeListener(listener)
 
     go 'http://www.google.co.jp/'
     sleep 3 *1000

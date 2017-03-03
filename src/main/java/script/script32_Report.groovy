@@ -1,4 +1,7 @@
 import geb.Browser
+import geb.report.ReportState
+import geb.report.Reporter
+import geb.report.ReportingListener
 
 Browser.drive {
 	/**
@@ -23,6 +26,18 @@ Browser.drive {
 		cleanReportGroupDir()
 	 */
 
+    // リスナ定義
+    reportingListener = new ReportingListener() {
+        void onReport(Reporter reporter, ReportState reportState, List<File> reportFiles) {
+            reportFiles.each {
+                println "[[ATTACHMENT|$it.absolutePath]]"
+            }
+        }
+    }
+
+    // リスナ追加
+    config.reporter.addListener(reportingListener);
+
 	go 'http://www.google.co.jp/'
 	report 'google-'
 
@@ -43,5 +58,5 @@ Browser.drive {
 	// cleanReportGroupDir()
 
 	sleep 30 * 1000
-
 }
+
