@@ -49,7 +49,7 @@ Browser.drive {
 
 class PopupPage extends Page{
 	// baseURL +
-	static url = "script7.html"
+	static url = "script07.html"
 	static content = {
 		showAlert      {$("input", name: "showAlert")}
 		donotShowAlert {$("input", name: "dontShowAlert")}
