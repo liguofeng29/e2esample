@@ -12,13 +12,7 @@
 import geb.Browser
 
 /**
- * geb常用メソッド
- *
- * .value() elementのtext代入
- * .text()  elementのtext取得
- * .click() elementのclick
- * waitFor 	条件待ち、時間経過するとWaitTimeoutExceptionが発生する
- *
+ * Gebサンプル *
  */
 def keyword = 'javait.hatenablog.com'
 
