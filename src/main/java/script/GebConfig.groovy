@@ -69,3 +69,7 @@ environments {
 // 実行環境に合わせた各種WebDriverバイナリのパスをシステムプロパティに設定する
 script.DriverSystemPropertyInitializer.initialize()
 
+keywords {
+    word1 = "abc"
+    word2 = 123
+}
